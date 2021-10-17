@@ -17,3 +17,22 @@ sudo rm -R <folder-name>
 
 #Folder Write/Delete permission:
 sudo chmod -R 777 YOUR_FOLDER_PATH
+
+
+#Uninstall a program
+sudo apt-get --purge remove <program-name>
+
+#Clean Up after uninstall a program
+sudo apt-get autoremove
+
+
+#Open A Folder (Ubuntu):
+nautilus .
+
+
+#Open a Folder (WSL):
+wslview .
+
+
+Open an html document in a web browser(WSL):
+wslview readme.html
