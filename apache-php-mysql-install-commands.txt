@@ -1,0 +1,58 @@
+Apache Install:
+sudo apt install apache2
+Or, sudo apt-get install apache2
+
+
+Check Hostname:
+hostname -I
+
+
+Start/Restart Apache:
+sudo service apache2 start/restart
+
+
+======================================================
+
+
+MySql Install:
+sudo apt-get install mysql-server
+
+
+Version check: mysql --version
+
+
+Secure MySql:
+sudo mysql_secure_installation
+
+
+Start/Stop MySql: 
+sudo /etc/init.d/mysql start
+Or, 
+sudo service mysql stop
+sudo service mysql start
+
+
+Login MySql: sudo mysql -u root -p
+
+Change User Password: ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new-password';
+
+
+Queries: 
+mysql> SHOW DATABASES;
+mysql> CREATE DATABASE db_name;
+mysql> SELECT user FROM mysql. user;
+
+Exit MySql: mysql> exit;
+
+
+==================================================
+
+
+PHP Install:
+sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+
+
+===================================================
+
+
+N.B: Don't forget to restart apache.

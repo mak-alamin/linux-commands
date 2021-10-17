@@ -1,0 +1,40 @@
+sudo apt update, upgrade
+
+
+#WP-CLI Install: 
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
+
+#Check the Phar file to verify that it’s working:
+php wp-cli.phar --info
+
+
+#To use WP-CLI from the command line by typing wp
+chmod +x wp-cli.phar
+sudo mv wp-cli.phar /usr/local/bin/wp
+
+
+#Check if WP-CLI is working:
+ wp --info
+
+#Update WP-CLI:
+wp cli update
+
+
+=============================================================
+
+
+WordPress Core Download:
+In your project folder hit ---> wp core download
+
+
+Create Config File:
+wp config create --dbname=wp_test --dbuser=root --dbpass=rootpass --locale=ro_RO
+
+
+If asking for FTP credentials:
+sudo chown -R www-data:www-data /var/www/html/wp_test/
+
+Or, wp-config.php:
+
+define('FS_METHOD', 'direct');
