@@ -34,7 +34,7 @@ sudo service mysql start
 
 Login MySql: sudo mysql -u root -p
 
-Change User Password: ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new-password';
+Change User Password: ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root@PASS22';
 
 
 Queries: 
@@ -49,7 +49,7 @@ Exit MySql: mysql> exit;
 
 
 PHP Install:
-sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+sudo apt-get install php libapache2-mod-php php-mysql
 
 
 ===================================================

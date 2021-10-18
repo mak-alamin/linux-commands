@@ -18,7 +18,7 @@ sudo mv wp-cli.phar /usr/local/bin/wp
  wp --info
 
 #Update WP-CLI:
-wp cli update
+sudo wp cli update
 
 
 =============================================================
@@ -29,7 +29,7 @@ In your project folder hit ---> wp core download
 
 
 Create Config File:
-wp config create --dbname=wp_test --dbuser=root --dbpass=rootpass --locale=ro_RO
+wp config create --dbname=wp_test --dbuser=root --dbpass=root@PASS22 --locale=ro_RO
 
 
 If asking for FTP credentials:
