@@ -1,0 +1,89 @@
+Apache Install:
+sudo apt install apache2
+Or, sudo apt-get install apache2
+
+
+Check Hostname:
+hostname -I
+
+
+Change Port to access localhost:
+/etc/apache2/ports.conf
+
+
+Start/Restart Apache:
+sudo service apache2 start/restart
+
+
+======================================================
+
+
+MySql Install:
+sudo apt-get install mysql-server
+
+
+Version check:
+mysql --version
+
+
+Secure MySql:
+sudo mysql_secure_installation
+
+
+Start/Stop MySql: 
+sudo /etc/init.d/mysql start
+Or, 
+sudo service mysql stop
+sudo service mysql start
+
+
+Login MySql:
+ sudo mysql -u root -p
+
+
+Change User Password: 
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root@PASS22';
+
+Queries: 
+mysql> SHOW DATABASES;
+mysql> CREATE DATABASE db_name;
+mysql> SELECT user FROM mysql. user;
+
+Exit MySql:
+ mysql> exit;
+
+
+** Mysql Errors: 
+Cannot change directory to /nonexistent: No such file or directory
+sudo service mysql stop
+sudo usermod -d /var/lib/mysql/ mysql
+sudo service mysql start
+ 
+
+Completely Uninstall Mysql: 
+https://askubuntu.com/questions/1270094/how-to-completely-remove-mysql-from-my-system
+
+
+==================================================
+
+
+PHP Install:
+sudo apt-get install php libapache2-mod-php php-mysql
+
+
+==================================================
+
+
+PHP MyAdmin Install:
+
+sudo apt-get install phpmyadmin
+
+
+To Access PHP MyAdmin:
+nano /etc/apache2/apache2.conf
+and paste the following at the end of file
+Include /etc/phpmyadmin/apache.conf
+
+==========================================================
+
+N.B: Don't forget to restart apache and mysql.

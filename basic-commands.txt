@@ -1,0 +1,41 @@
+#Custom Screen resolution commands:
+
+cvt "1376x770_60.00"
+
+xrandr --newmode "1376x770_60.00"   85.75  1376 1448 1584 1792  770 773 783 800 -hsync +vsync
+
+xrandr --addmode VGA-1 "1376x770_60.00"
+
+gedit ~/.profile
+(add the commands line 5 and 7 and save the file)
+
+
+
+#Remove/delete a directory
+sudo rm -R <folder-name>
+
+
+#Own a directory
+sudo chown -R mak:mak /var/www/html/
+
+#Folder Write/Delete permission:
+sudo chmod -R 777 YOUR_FOLDER_PATH
+
+
+#Uninstall a program
+sudo apt-get --purge remove <program-name>
+
+#Clean Up after uninstall a program
+sudo apt-get autoremove
+
+
+#Open A Folder (Ubuntu):
+nautilus .
+
+
+#Open a Folder (WSL):
+wslview .
+
+
+Open an html document in a web browser(WSL):
+wslview readme.html
