@@ -74,7 +74,7 @@ sudo apt-get install php libapache2-mod-php php-mysql
 ==================================================
 
 
-PHP MyAdmin Install:
+PHPMyAdmin Install:
 
 sudo apt-get install phpmyadmin
 
@@ -85,5 +85,17 @@ and paste the following at the end of file
 Include /etc/phpmyadmin/apache.conf
 
 ==========================================================
+
+Increase Upload File Size and Execution time
+
+sudo chmod -R 777 /etc/php/8.1/apache2/php.ini
+nano /etc/php/8.1/apache2/php.ini
+
+ upload_max_filesize 128M
+ post_max_size 128M
+ memory_limit 256M
+ max_execution_time 3000
+ max_input_time 3000
+
 
 N.B: Don't forget to restart apache and mysql.
