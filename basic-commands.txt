@@ -39,3 +39,8 @@ wslview
 
 Open an html document in a web browser(WSL):
 wslview readme.html
+
+
+# Zip files/folder
+sudo apt-get install zip unzip -y
+zip -r zipped.zip folder_name
