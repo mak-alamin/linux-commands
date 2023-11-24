@@ -30,11 +30,11 @@ sudo apt-get autoremove
 
 
 #Open A Folder (Ubuntu):
-nautilus .
+xdg-open
 
 
 #Open a Folder (WSL):
-wslview .
+wslview
 
 
 Open an html document in a web browser(WSL):
